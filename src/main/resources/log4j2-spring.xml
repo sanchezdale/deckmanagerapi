@@ -1,0 +1,50 @@
+<Configuration name="Default" status="error" monitorInterval="60">
+    <Properties>
+        <Property name="database_url">localhost:27107</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    %d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </Console>
+       <NoSql name="mongoAppender">
+            <MongoDb databaseName="heroku_l7vs26gd" collectionName="applicationLogs" server="ds139430.mlab.com" port="39430"
+            username="deckmanager" password="Planeswalker">
+            </MongoDb>
+        </NoSql>
+        <!-- <NoSql name="mongoAppender">
+            <MongoDb databaseName="logs" collectionName="applicationLogs" server="localhost"
+                     username="" password="">
+            </MongoDb>
+        </NoSql>-->
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="info">
+            <AppenderRef ref="Console-Appender" />
+        </Logger>
+        <AsyncLogger name="org.apache.tomcat" level="info" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+        </AsyncLogger>
+        <AsyncLogger name="org.hibernate" level="info" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+        </AsyncLogger>
+        <AsyncLogger name="org.springframework.web.filter.CommonsRequestLoggingFilter" level="debug" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+        </AsyncLogger>
+        <AsyncLogger name="org.springframework.web" level="debug" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+        </AsyncLogger>
+        <AsyncLogger name="com.fasterxml.jackson" level="debug" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+        </AsyncLogger>
+        <AsyncLogger name="com.wizardsofcode.deckmanagerserver" level="debug" additivity="false">
+            <AppenderRef ref="mongoAppender"/>
+        </AsyncLogger>
+        <Root level="debug">
+            <AppenderRef ref="mongoAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

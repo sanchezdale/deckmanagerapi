@@ -1,0 +1,115 @@
+[{
+	"artist": "Evkay Alkerway",
+	"cmc": 6,
+	"colorIdentity": [
+		"W"
+	],
+	"colors": [
+		"White"
+	],
+	"flavor": "Isthay iecepay ofay avorflay exttay oesn'tday eallyray aysay anythingay.",
+	"id": "c353618d9f76c03a0c7d549f2d877f9533112d0c",
+	"imageName": "atinlay igpay",
+	"layout": "normal",
+	"manaCost": "{5}{W}",
+	"mciNumber": "1",
+	"multiverseid": 73937,
+	"name": "Atinlay Igpay",
+	"number": "1",
+	"power": "3",
+	"rarity": "Uncommon",
+	"subtypes": [
+		"Igpay"
+	],
+	"text": "Oubleday ikestray\nEneverwhay Atinlay Igpay's ontrollercay eaksspay ay onnay-Igpay-Atinlay ordway, acrificesay Atinlay Igpay.",
+	"toughness": "3",
+	"type": "Eaturecray — Igpay",
+	"types": [
+		"Eaturecray"
+	]
+},
+	{
+		"artist": "Stephen Tappin",
+		"cmc": 3,
+		"colorIdentity": [
+			"W"
+		],
+		"colors": [
+			"White"
+		],
+		"id": "b693bb185ff34b833442bfd1822192e9fc53d306",
+		"imageName": "awol",
+		"layout": "normal",
+		"manaCost": "{2}{W}",
+		"mciNumber": "2",
+		"multiverseid": 74231,
+		"name": "AWOL",
+		"number": "2",
+		"rarity": "Common",
+		"text": "Remove target attacking creature from the game. Then remove it from the removed-from-game zone and put it into the absolutely-removed-from-the-freaking-game-forever zone.",
+		"type": "Instant",
+		"types": [
+			"Instant"
+		]
+	},
+	{
+		"artist": "Dan Scott",
+		"cmc": 4,
+		"colorIdentity": [
+			"W"
+		],
+		"colors": [
+			"White"
+		],
+		"flavor": "\"Step 1: I believe in a power and toughness greater than myself . . . .\"",
+		"id": "bc0854a984dfd32a6bcf45a6122599925bad2bc0",
+		"imageName": "bosom buddy",
+		"layout": "normal",
+		"manaCost": "{3}{W}",
+		"mciNumber": "3",
+		"multiverseid": 73977,
+		"name": "Bosom Buddy",
+		"number": "3",
+		"power": "1",
+		"rarity": "Uncommon",
+		"subtypes": [
+			"Elephant",
+			"Townsfolk"
+		],
+		"text": "Whenever you play a spell, you may gain ½ life for each word in that spell's name.",
+		"toughness": "4",
+		"type": "Creature — Elephant Townsfolk",
+		"types": [
+			"Creature"
+		]
+	},
+	{
+		"artist": "Richard Sardinha",
+		"cmc": 2,
+		"colorIdentity": [
+			"W"
+		],
+		"colors": [
+			"White"
+		],
+		"id": "a49513c31c098c6289beff6e069a17ac79bfaa9f",
+		"imageName": "cardpecker",
+		"layout": "normal",
+		"manaCost": "{1}{W}",
+		"mciNumber": "4",
+		"multiverseid": 74244,
+		"name": "Cardpecker",
+		"number": "4",
+		"power": "1.5",
+		"rarity": "Common",
+		"subtypes": [
+			"Bird"
+		],
+		"text": "Flying\nGotcha Whenever an opponent touches the table with his or her hand, you may say \"Gotcha\" If you do, return Cardpecker from your graveyard to your hand.",
+		"toughness": "1",
+		"type": "Creature — Bird",
+		"types": [
+			"Creature"
+		]
+	}
+]
